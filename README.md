@@ -15,6 +15,11 @@ docker run -v /var/run/docker.sock:/var/run/docker.sock --entrypoint /bin/bash -
 
 ## Compiling
 
+Check available Docker CLI Debian packages:
+```
+$ apt-cache madison docker-ce-cli
+```
+
 Usage:
 ```
 make build v=5:18.09.5~3-0~debian-stretch t=18.09.5

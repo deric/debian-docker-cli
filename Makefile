@@ -19,6 +19,7 @@ define RELEASE
 	$(call BUILD,$(1),$(2));
 	docker tag $(NAME) $(NAME):latest
 	docker push $(NAME):$(2)
+	docker push $(NAME):latest
 endef
 
 shell:
